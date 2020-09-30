@@ -8,8 +8,8 @@ export const initialState = {
     {
       general: {
         name: 'facebook',
-        color: '#178FF5',
-        Icon: <GrFacebook color="#178FF5" size="1.25rem" />,
+        color: '#198ff5',
+        Icon: <GrFacebook color='#198ff5' size="1.25rem" />,
         username: '@nathanf',
       },
       followers: {
@@ -35,8 +35,8 @@ export const initialState = {
     {
       general: {
         name: 'twitter',
-        color: '#1DA1F2',
-        Icon: <GrTwitter color="#1DA1F2" size="1.25rem" />,
+        color: '#1ca0f2',
+        Icon: <GrTwitter color="#1ca0f2" size="1.25rem" />,
         username: '@nathanf',
       },
       followers: {
@@ -62,8 +62,8 @@ export const initialState = {
     {
       general: {
         name: 'instagram',
-        color: '#EE877E',
-        Icon: <GrInstagram color="#EE877E" size="1.25rem" />,
+        color: 'linear-gradient (#fdc468, #df4996)',
+        Icon: <GrInstagram color="linear-gradient (#fdc468, #df4996)" size="1.25rem" />,
         username: '@realnathanf',
       },
       followers: {
@@ -89,8 +89,8 @@ export const initialState = {
     {
       general: {
         name: 'youtube',
-        color: '#C4032B',
-        Icon: <GrYoutube color="#C4032B" size="1.25rem" />,
+        color: '#c4032a',
+        Icon: <GrYoutube color="#c4032a" size="1.25rem" />,
         username: 'Nathan F.',
       },
       followers: {
