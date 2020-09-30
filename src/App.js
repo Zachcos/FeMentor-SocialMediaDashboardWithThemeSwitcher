@@ -1,12 +1,15 @@
 import React from 'react';
-import GlobalStyle from './globalStyle';
+import {AppProvider} from './app-context';
+import Test from './test';
 
 function App() {
   return (
-    <div className="App">
-      <h1>hello, world!</h1>
-      <GlobalStyle /> 
-    </div>
+    <AppProvider>
+      <div className="App">
+        <h1>hello, world!</h1>
+        <Test />
+      </div>
+    </AppProvider>
   );
 }
 
