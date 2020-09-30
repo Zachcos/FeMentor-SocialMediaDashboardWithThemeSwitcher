@@ -5,7 +5,7 @@ import initialState from './app-state';
 import themes from './themes';
 
 const AppStateContext = createContext(initialState);
-// const AppDispatchContext = createContext();
+// const AppDispatchContext = createContext(); //TODO: Wire up and find out why this is it's own context
 
 const AppProvider = ({children}) => {
   const [currentTheme, setTheme] = useState(initialState.currentTheme);
