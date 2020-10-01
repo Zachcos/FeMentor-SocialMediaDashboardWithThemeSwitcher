@@ -1,7 +1,7 @@
 import reset from 'styled-reset';
 import { createGlobalStyle, css } from 'styled-components';
 
-const GlobalStyle = createGlobalStyle`
+export const GlobalStyle = createGlobalStyle`
 ${reset}
 
 ${({ theme }) => css`
@@ -41,4 +41,6 @@ html {
 }
 `;
 
-export default GlobalStyle;
+export const mediaQuery = {
+  tablet: `(min-width: 768px)`,
+};
