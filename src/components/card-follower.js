@@ -7,13 +7,7 @@ const Container = styled(Card)`
   text-align: center;
   border-top-width: 0.25rem;
   border-top-style: solid;
-  border-top-color: red;
-`;
-
-const TempIcon = styled.div`
-  width: 1.125rem;
-  height: 1.125rem;
-  background-color: lightcoral;
+  border-top-color: ${(props) => props.color};
 `;
 
 const SubscribersWrapper = styled.div`
@@ -33,16 +27,19 @@ const SubscribersLabel = styled.span`
   text-transform: uppercase;
 `;
 
-export const CardFollower = () => (
-  <Container>
+export const CardFollower = ({
+  general: { name, username, Icon, color },
+  followers: { total, today, status },
+}) => (
+  <Container color={color}>
     <CardTitle center>
-      <TempIcon />
-      <Subheading style={{ marginLeft: '0.5rem' }}>username</Subheading>
+      {Icon}
+      <Subheading style={{ marginLeft: '0.5rem' }}>{username}</Subheading>
     </CardTitle>
     <SubscribersWrapper>
-      <SubscribersValue>1987</SubscribersValue>
+      <SubscribersValue>{total}</SubscribersValue>
       <SubscribersLabel>followers</SubscribersLabel>
     </SubscribersWrapper>
-    <CardStats status="up" value="12" label="today" />
+    <CardStats status={status} value={today} label="today" />
   </Container>
 );
