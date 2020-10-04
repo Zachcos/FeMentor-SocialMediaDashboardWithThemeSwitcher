@@ -3,7 +3,6 @@ import styled from 'styled-components';
 
 import { mediaQuery } from '../globalStyle';
 import { AppStateContext } from '../app-context';
-import { Theme } from '../models/themes';
 
 import { Heading, Subheading } from './index';
 
