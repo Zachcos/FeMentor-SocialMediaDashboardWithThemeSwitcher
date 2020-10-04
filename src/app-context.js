@@ -5,7 +5,7 @@ import initialState from './models/app-state';
 import themes from './models/themes';
 
 const AppStateContext = createContext(initialState);
-// const AppDispatchContext = createContext(); //TODO: Wire up and find out why this is it's own context
+const AppDispatchContext = createContext({ setTheme: () => {} });
 
 const AppProvider = ({ children }) => {
   const [currentTheme, setTheme] = useState(initialState.currentTheme);
@@ -14,12 +14,14 @@ const AppProvider = ({ children }) => {
 
   return (
     <AppStateContext.Provider value={{ ...initialState }}>
-      <ThemeProvider theme={theme}>
-        {children}
-        <GlobalStyle />
-      </ThemeProvider>
+      <AppDispatchContext.Provider value={{ setTheme }}>
+        <ThemeProvider theme={theme}>
+          {children}
+          <GlobalStyle />
+        </ThemeProvider>
+      </AppDispatchContext.Provider>
     </AppStateContext.Provider>
   );
 };
 
-export { AppProvider, AppStateContext };
+export { AppProvider, AppStateContext, AppDispatchContext };
