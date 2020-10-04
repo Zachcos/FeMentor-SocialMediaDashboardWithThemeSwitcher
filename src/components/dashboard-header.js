@@ -4,7 +4,7 @@ import styled from 'styled-components';
 import { mediaQuery } from '../globalStyle';
 import { AppStateContext } from '../app-context';
 
-import { Heading, Subheading } from './index';
+import { Heading, Subheading, Toggle } from './index';
 
 const Header = styled.header`
   margin-bottom: 2.5rem;
@@ -43,6 +43,7 @@ export const DashboardHeader = () => {
         <Title>Social Media Dashboard</Title>
         <Subheading>Total followers: {totalFollowers}</Subheading>
       </TitleWrapper>
+      <Toggle />
     </Header>
   );
 };
