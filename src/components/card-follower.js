@@ -1,7 +1,6 @@
 import React, { useContext } from 'react';
 import styled from 'styled-components';
 
-import { AppStateContext } from '../app-context';
 import { Card, CardTitle, CardStats, Subheading } from './index';
 
 const Container = styled(Card)`
@@ -34,19 +33,16 @@ const SubscribersLabel = styled.span`
   text-transform: uppercase;
 `;
 
-export const CardFollower = () => {
-  console.log('app context will eventually go here');
-  return (
-    <Container>
-      <CardTitle center>
-        <TempIcon />
-        <Subheading style={{ marginLeft: '0.5rem' }}>username</Subheading>
-      </CardTitle>
-      <SubscribersWrapper>
-        <SubscribersValue>1987</SubscribersValue>
-        <SubscribersLabel>followers</SubscribersLabel>
-      </SubscribersWrapper>
-      <CardStats status="up" value="12" label="today" />
-    </Container>
-  );
-};
+export const CardFollower = () => (
+  <Container>
+    <CardTitle center>
+      <TempIcon />
+      <Subheading style={{ marginLeft: '0.5rem' }}>username</Subheading>
+    </CardTitle>
+    <SubscribersWrapper>
+      <SubscribersValue>1987</SubscribersValue>
+      <SubscribersLabel>followers</SubscribersLabel>
+    </SubscribersWrapper>
+    <CardStats status="up" value="12" label="today" />
+  </Container>
+);
