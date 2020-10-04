@@ -17,11 +17,14 @@ const Container = styled.section`
 `;
 
 export const DashboardFollower = () => {
-  console.log('grab app state here');
+  const { socialMedia } = useContext(AppStateContext);
 
   return (
     <Container>
-      <CardFollower />
+      <h2 className="cr_u-srOnly">Followers</h2>
+      {socialMedia.map((media) => (
+        <CardFollower key={`${media.general.name}-followers`} {...media} />
+      ))}
     </Container>
   );
 };
