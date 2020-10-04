@@ -13,7 +13,7 @@ ${({ theme }) => css`
     &:before {
       background-color: ${theme.topBg};
       content: '';
-      height: 245px;
+      height: 14.7rem;
       left: 0;
       position: absolute;
       right: 0;
