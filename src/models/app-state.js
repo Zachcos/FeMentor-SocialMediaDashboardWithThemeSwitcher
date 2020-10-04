@@ -9,7 +9,7 @@ export const initialState = {
       general: {
         name: 'facebook',
         color: '#198ff5',
-        Icon: <GrFacebook color='#198ff5' size="1.25rem" />,
+        Icon: <GrFacebook color="#198ff5" size="1.25rem" />,
         username: '@nathanf',
       },
       followers: {
@@ -63,7 +63,12 @@ export const initialState = {
       general: {
         name: 'instagram',
         color: 'linear-gradient (#fdc468, #df4996)',
-        Icon: <GrInstagram color="linear-gradient (#fdc468, #df4996)" size="1.25rem" />,
+        Icon: (
+          <GrInstagram
+            color="linear-gradient (#fdc468, #df4996)"
+            size="1.25rem"
+          />
+        ),
         username: '@realnathanf',
       },
       followers: {
@@ -114,6 +119,6 @@ export const initialState = {
       ],
     },
   ],
-}
+};
 
 export default initialState;
