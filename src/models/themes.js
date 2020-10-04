@@ -3,7 +3,7 @@ const themes = {
     bg: 'hsl(230, 17%, 14%)',
     topBg: 'hsl(232, 19%, 15%)',
     cardBg: 'hsl(228, 28%, 20%)',
-    cardHoverBg: 'hsl(228, 29%, 20%)',
+    cardHoverBg: 'hsl(228, 26%, 27%)',
     headingColor: 'hsl(0, 0%, 100%)',
     sectionHeadingColor: 'hsl(0, 0%, 100%)',
     subheadingColor: 'hsl(228, 34%, 66%)',
