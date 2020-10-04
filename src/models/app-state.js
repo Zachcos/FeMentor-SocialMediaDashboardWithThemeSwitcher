@@ -62,13 +62,9 @@ export const initialState = {
     {
       general: {
         name: 'instagram',
-        color: 'linear-gradient (#fdc468, #df4996)',
-        Icon: (
-          <GrInstagram
-            color="linear-gradient (#fdc468, #df4996)"
-            size="1.25rem"
-          />
-        ),
+        // color: 'linear-gradient(0deg, #fdc468 0%, #df4996 100%)',
+        color: '#df4996',
+        Icon: <GrInstagram color="#df4996" size="1.25rem" />,
         username: '@realnathanf',
       },
       followers: {
