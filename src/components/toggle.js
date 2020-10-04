@@ -9,7 +9,7 @@ import { Subheading } from './index';
 const Container = styled.div`
   display: flex;
   justify-content: space-between;
-  align-content: center;
+  align-items: center;
 `;
 
 const Mode = styled(Subheading)`
