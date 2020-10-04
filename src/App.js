@@ -2,7 +2,11 @@ import React from 'react';
 import styled from 'styled-components';
 import { AppProvider } from './app-context';
 
-import { DashboardHeader, DashboardFollower } from './components/index';
+import {
+  DashboardHeader,
+  DashboardFollower,
+  DashboardSubscrption,
+} from './components/index';
 
 const Container = styled.div`
   max-width: 69.375rem;
@@ -17,6 +21,7 @@ function App() {
         <DashboardHeader />
         <main>
           <DashboardFollower />
+          <DashboardSubscrption />
         </main>
       </Container>
     </AppProvider>

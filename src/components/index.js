@@ -10,3 +10,4 @@ export * from './card-stats';
 export * from './card-follower';
 export * from './dashboard-header';
 export * from './dashboard-follower';
+export * from './dashboard-subscription';
