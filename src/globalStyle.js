@@ -7,11 +7,11 @@ ${reset}
 ${({ theme }) => css`
   body {
     background-color: ${theme.bg};
-    color: ${theme.text_light};
+    color: ${theme.textColor};
     font-family: 'Inter', sans-serif;
 
     &:before {
-      background-color: ${theme.topBgPattern};
+      background-color: ${theme.topBg};
       content: '';
       height: 245px;
       left: 0;
