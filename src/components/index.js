@@ -2,5 +2,10 @@
 
 export * from './heading';
 export * from './subheading';
-export * from './dashboard-header';
 export * from './toggle';
+export * from './card';
+export * from './card-title';
+export * from './card-stats';
+export * from './card-follower';
+export * from './dashboard-header';
+export * from './dashboard-follower';
