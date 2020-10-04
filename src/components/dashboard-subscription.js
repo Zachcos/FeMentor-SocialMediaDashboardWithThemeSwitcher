@@ -2,7 +2,7 @@ import React, { useContext } from 'react';
 import styled from 'styled-components';
 
 import { AppStateContext } from '../app-context';
-import { SectionHeading } from './index';
+import { SectionHeading, CardSubscriber } from './index';
 
 const Container = styled.section`
   display: grid;
@@ -16,12 +16,14 @@ const Container = styled.section`
 `;
 
 export const DashboardSubscrption = () => {
-  console.log('This is the subscription dashboard');
+  const { socialMedia } = useContext(AppStateContext);
 
   return (
     <Container>
       <SectionHeading>Overview - Today</SectionHeading>
-      <p>data will go here</p>
+      {socialMedia.map((media) => (
+        <CardSubscriber key={`${media.general.name}-subscribers`} {...media} />
+      ))}
     </Container>
   );
 };

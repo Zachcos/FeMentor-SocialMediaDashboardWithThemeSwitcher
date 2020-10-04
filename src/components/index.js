@@ -8,6 +8,7 @@ export * from './card';
 export * from './card-title';
 export * from './card-stats';
 export * from './card-follower';
+export * from './card-subscriber';
 export * from './dashboard-header';
 export * from './dashboard-follower';
 export * from './dashboard-subscription';
